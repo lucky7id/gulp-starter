@@ -8,7 +8,7 @@ var handleErrors     = require('../../lib/handleErrors')
 var package          = require('../../../package.json')
 var path             = require('path')
 
-var fontPath = path.join(config.root.dest, config.tasks.fonts.dest)
+var fontPath = path.join(config.root.dest, config.tasks.iconFont.dest)
 var cssPath = path.join(config.root.dest, config.tasks.css.dest)
 
 var settings = {
@@ -25,7 +25,8 @@ var settings = {
     timestamp: 0, // see https://github.com/fontello/svg2ttf/issues/33
     fontName: 'icons',
     appendUnicode: true,
-    normalize: false
+    normalize: false,
+    formats: config.tasks.iconFont.extensions
   }
 }
 

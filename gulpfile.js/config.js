@@ -6,12 +6,11 @@ module.exports = {
 
   tasks: {
     js: {
-      src: 'javascripts',
-      dest: 'javascripts',
+      src: 'app',
+      dest: 'app',
       extractSharedJs: true,
       entries: {
         app: ['./app.js'],
-        page: ['./page.js']
       },
       extensions: ['js']
     },
@@ -31,12 +30,11 @@ module.exports = {
     html: {
       src: 'html',
       dest: './',
-      dataFile: 'data/global.json',
       htmlmin: {
         collapseWhitespace: true
       },
-      extensions: ['html', 'json'],
-      excludeFolders: ['layouts', 'shared', 'macros', 'data']
+      extensions: ['html'],
+      excludeFolders: []
       // watchOther: './app/views/*/**.html'
     },
 

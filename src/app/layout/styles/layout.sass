@@ -1,0 +1,33 @@
+.content
+    .navbar
+        border-radius: 0
+        margin-bottom: 0
+
+        .navbar-brand
+            width: 250px
+
+    .wrapper
+        padding-left: 250px
+
+        .sidebar-wrapper
+            width: 250px
+            z-index: 1000
+            left: 250px
+            height: 100%
+            margin-left: -250px
+            overflow-y: auto
+            background: $navbar-inverse-bg
+            position: fixed
+
+            .sidebar-items
+                .list-group-item
+                    border-radius: 0
+                    background-color: $navbar-inverse-bg
+                    color: $navbar-inverse-link-color
+                    transition: all .3s linear
+                    border: transparent
+
+                    &.active
+                        background-color: $navbar-inverse-bg
+                        color: #4690DC
+                        transition: all .3s linear

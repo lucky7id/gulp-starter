@@ -1,20 +1,23 @@
-{#
-  Nunjucks Templating!
-  Homepage: https://mozilla.github.io/nunjucks/
-  Docs: https://mozilla.github.io/nunjucks/api.html
-#}
+<!doctype html>
 
-{% extends 'layouts/application.html' %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
 
-{% block content %}
-  <img src="images/gulp.png" alt="gulp.js">
-  <h4>Ubiquitous Social Icons!</h4>
-  {% include "shared/social-icons-font.html" %}
-  {% include "shared/social-icons-svg.html" %}
-  <button id="button">Manually Load Async Module</button>
-  <p data-module="Highlight">An auto-loaded async module highlighted this!</p>
-{% endblock %}
+    <title>Test</title>
+    <meta name="description" content="Test">
+    <meta name="author" content="SitePoint">
 
-{% block javascript %}
-<script src="javascripts/app.js"></script>
-{% endblock %}
+    <link rel="stylesheet" href="stylesheets/global.css?v=1.0">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="app"></div>
+    <script src="app/shared.js"></script>
+    <script src="app/app.js"></script>
+</body>
+</html>
+
